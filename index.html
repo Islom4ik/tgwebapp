@@ -18,13 +18,13 @@
         tg.expand()
         const sendb = document.querySelector('.send')
         const tholder = document.querySelector('.input')
-        let data = {
-            text: tholder.value
-        }
         
-        console.log(data);
-
+        
         sendb.addEventListener('click', () => {
+            let data = {
+                text: tholder.value
+            }
+            console.log(data);
             console.log('clicked');
             tg.sendData(JSON.stringify())
             tg.close()
