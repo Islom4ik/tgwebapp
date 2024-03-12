@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB APP</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="main_title">DURAK BY DIMESENGINEER</h1>
+        <input class="input" type="text" placeholder="Enter text:">
+        <div class="send">SEND</div>
+    </header>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand()
+        const sendb = document.querySelector('.send')
+        const tholder = document.querySelector('.input')
+        let data = {
+            text: tholder.value
+        }
+        sendb.addEventListener('click', () => {
+            tg.sendData(JSON.stringify())
+            tg.close()
+        })
+    </script>
+</body>
+</html>
