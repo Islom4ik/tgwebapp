@@ -9,14 +9,14 @@
     <header class="header">
         <h1 class="main_title">DURAK BY DIMESENGINEER</h1>
         <input class="input" type="text" placeholder="Enter text:">
-        <div class="send">SEND</div>
+        <button id="sendb" class="send">SEND</button>
     </header>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         const tg = window.Telegram.WebApp;
         tg.expand()
-        const sendb = document.querySelector('.send')
+        const sendb = document.getElementById('sendb')
         const tholder = document.querySelector('.input')
         
         
