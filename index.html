@@ -21,6 +21,11 @@
         
         
         sendb.addEventListener('click', () => {
+            let data = {
+                text: tholder.value
+            }
+
+            tg.sendData(JSON.stringify(data))
             tg.close()
         })
     </script>
